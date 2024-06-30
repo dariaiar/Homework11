@@ -16,8 +16,8 @@ func main() {
 	findTelNumber(fileName, expression)
 
 	fileName = "text.txt"
-	expression = `(\b.*ти\b)|(\b.*ть\b)|(\b.*ся\b)|(\b.*сь\b)`
-	//Знайти всі слова неозначеної форми дієслова(інфінітив). Закінчення -ти,-ть,-ся,-сь
+	expression = `[А-Яа-яЁёЇїІіЄєҐґ']*і[А-Яа-яЁёЇїІіЄєҐґ']*і[А-Яа-яЁёЇїІіЄєҐґ']*`
+	//Знайти всі слова в яких є дві букви "і"
 	findTelNumber(fileName, expression)
 }
 
